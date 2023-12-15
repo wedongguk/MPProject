@@ -6,11 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.CheckBox;
 
@@ -20,14 +18,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText et_login_id, et_login_pw;
-    private Button btn_login, btn_register;
+    private Button btn_login, btn_signup;
 
     private boolean saveLoginData;
     private CheckBox login_chk;
@@ -42,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
 
         FirebaseUser user = mAuth.getCurrentUser();
-        if ( user != null) {
+        if ( user == null) {
             Intent login_intent = new Intent(this, MainActivity.class);
             startActivity(login_intent);
             Toast.makeText(this, "자동 로그인 \n" + user.getEmail(), Toast.LENGTH_SHORT).show();
@@ -61,10 +56,10 @@ public class LoginActivity extends AppCompatActivity {
         et_login_id = findViewById(R.id.et_login_id);
         et_login_pw = findViewById(R.id.et_login_pw);
         btn_login = findViewById(R.id.btn_login);
-        btn_register = findViewById(R.id.btn_register);
+        btn_signup = findViewById(R.id.btn_signup);
 
         //회원가입 버튼 클릭시 화면 전환
-        btn_register.setOnClickListener(new View.OnClickListener() {
+        btn_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);

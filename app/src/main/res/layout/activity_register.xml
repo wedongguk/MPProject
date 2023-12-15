@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B388FF"
+    android:background="#4CAF50"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -24,8 +24,8 @@
 
     <EditText
         android:id="@+id/et_register_id"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
+        android:layout_width="234dp"
+        android:layout_height="43dp"
         android:layout_marginTop="220dp"
         android:ems="10"
         android:hint=" E-mail"
@@ -38,8 +38,8 @@
 
     <EditText
         android:id="@+id/et_register_pw"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
+        android:layout_width="234dp"
+        android:layout_height="45dp"
         android:layout_marginTop="36dp"
         android:ems="10"
         android:hint=" PASSWORD"
@@ -52,8 +52,8 @@
 
     <EditText
         android:id="@+id/et_register_nickname"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
+        android:layout_width="236dp"
+        android:layout_height="44dp"
         android:layout_marginTop="36dp"
         android:ems="10"
         android:hint=" NICKNAME"
@@ -127,8 +127,8 @@
 
     <EditText
         android:id="@+id/et_register_age"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
+        android:layout_width="233dp"
+        android:layout_height="42dp"
         android:layout_marginTop="36dp"
         android:ems="10"
         android:hint=" AGE"
@@ -141,8 +141,8 @@
 
     <Button
         android:id="@+id/btn_register_button"
-        android:layout_width="230dp"
-        android:layout_height="35dp"
+        android:layout_width="231dp"
+        android:layout_height="46dp"
         android:layout_marginTop="36dp"
         android:foreground="?attr/selectableItemBackgroundBorderless"
         android:text="회원가입"
@@ -150,7 +150,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_register_age"
         app:layout_constraintTop_toBottomOf="@+id/et_register_age" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -83,7 +83,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                             } else {
                                 // If sign in fails, display a message to the user.
-                                Toast.makeText(RegisterActivity.this, "회원가입 실패",
+                                Toast.makeText(RegisterActivity.this, "회원가입 실패"+ task.getException().getMessage(),
                                         Toast.LENGTH_SHORT).show();
                             }
                         }
