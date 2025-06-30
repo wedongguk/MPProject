@@ -28,8 +28,8 @@
 
 
 ### 2. 로그인 기능
-|---|---|---|---|
 |![login](screens/login1.png)|![login](screens/login2.png)|![login](screens/login3.png)|![login](screens/login4.png)|
+|---|---|---|---|
 - 이메일(아이디)과 비밀번호 입력
 - 로그인 성공 시 메인 화면으로 이동
 - ‘아이디 기억하기’ 기능 지원
@@ -37,9 +37,9 @@
 - 회원가입 페이지로 이동 가능
 
 ### 3. 회원가입 기능
-|---|---|---|---|---|
 |![join](screens/join1.png)|![join](screens/join2.png)|![join](screens/join3.png)|![join](screens/join4.png)|![join](screens/join5.png)|
 ![firebase](screens/firebase.png)
+|---|---|---|---|---|
 - 입력 항목: 이메일, 비밀번호, 닉네임, 나이
 - 입력 검증:
   - 이메일 형식 체크
@@ -55,8 +55,8 @@
   - `축구 일기 쓰기` → 일기장 화면
 
 ### 5. 축구장 검색 기능
-|---|---|---|
 |![search](screens/search1.png)|![search](screens/search2.png)|![search](screens/search3.png)|
+|---|---|---|
 - **Open API 연동**: [경기도 공공체육시설(축구장)](https://openapi.gg.go.kr/PublicTrainingFacilitySoccer)
 - `데이터 가져오기` 버튼을 통해 XML 데이터 조회
 - 시군명 입력:
