@@ -39,8 +39,6 @@
 ### 3. 회원가입 기능
 |![join](screens/join1.png)|![join](screens/join2.png)|![join](screens/join3.png)|![join](screens/join4.png)|![join](screens/join5.png)|
 |---|---|---|---|---|
-
-![firebase](screens/firebase.png)
 - 입력 항목: 이메일, 비밀번호, 닉네임, 나이
 - 입력 검증:
   - 이메일 형식 체크
@@ -48,6 +46,7 @@
   - 비밀번호 6자리 이상 조건
 - 회원가입 성공 시 로그인 화면으로 이동
 - 사용자 정보는 **Firestore Database**에 저장됨
+![firebase](screens/firebase.png)
 
 ### 4. 메인 화면
 ![main](screens/main.png)
