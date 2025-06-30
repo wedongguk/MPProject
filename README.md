@@ -46,7 +46,7 @@
   - 비밀번호 6자리 이상 조건
 - 회원가입 성공 시 로그인 화면으로 이동
 - 사용자 정보는 **Firestore Database**에 저장됨
-![firebase](screens/firebase.png)
+- ![firebase](screens/firebase.png)
 
 ### 4. 메인 화면
 ![main](screens/main.png)
